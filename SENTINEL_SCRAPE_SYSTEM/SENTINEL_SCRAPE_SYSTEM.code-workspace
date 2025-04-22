@@ -1,0 +1,27 @@
+{
+	"folders": [
+	  {
+		"path": "."
+	  }
+	],
+	"settings": {
+	  "python.terminal.activateEnvironment": true,
+	  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+	  "terminal.integrated.defaultProfile.windows": "PowerShell",
+	  "terminal.integrated.profiles.windows": {
+		"PowerShell": {
+		  "source": "PowerShell",
+		  "icon": "terminal-powershell",
+		  "args": [
+			"-NoExit",
+			"-Command",
+			"& { if (Test-Path -Path '.venv\\Scripts\\Activate.ps1') { .venv\\Scripts\\Activate.ps1 } else { Write-Host 'Virtual environment not found in .venv folder' } }"
+		  ]
+		}
+	},
+	"editor.tokenColorCustomizations": {
+		"comments": "",
+		"textMateRules": []
+	}
+	}
+  }
